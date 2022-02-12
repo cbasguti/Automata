@@ -1,0 +1,25 @@
+digraph {
+	fake [style=invisible]
+	C [shape=doublecircle]
+	A [root=true]
+	BC [shape=doublecircle]
+	ABC [shape=doublecircle]
+	B
+	AC [shape=doublecircle]
+	AB
+	fake -> A [style=bold]
+	B -> BC [label=1]
+	AC -> ABC [label=0]
+	A -> AB [label=0]
+	C -> C [label=0]
+	ABC -> BC [label=1]
+	AC -> BC [label=1]
+	BC -> BC [label=1]
+	AB -> AB [label=0]
+	A -> C [label=1]
+	AB -> BC [label=1]
+	B -> A [label=0]
+	BC -> AC [label=0]
+	C -> B [label=1]
+	ABC -> ABC [label=0]
+}
